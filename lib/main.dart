@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:stream_video_flutter/stream_video_flutter.dart';
+import 'package:videocall/call/ui/contacts.dart';
 import 'call/bloc/bloc.dart';
 import 'call/bloc/event.dart';
 import 'call/ui/call_screen.dart';
@@ -74,7 +75,7 @@ class _MyAppState extends State<MyApp> {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: const CallScreen(),
+          home: ContactsPage(),
         ),
       ),
     );

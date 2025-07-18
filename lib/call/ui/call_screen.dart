@@ -39,10 +39,10 @@ class CallScreen extends StatelessWidget {
 
               return Stack(
                 children: [
-                  // عرض الفيديو وكافة التحكمات الافتراضية
+                  // يملأ حاوية الفيديو كامل الشاشة
                   Positioned.fill(child: StreamCallContainer(call: call)),
 
-                  // زر مخصص لإنهاء المكالمة
+                  // زر إنهاء المكالمة
                   Positioned(
                     bottom: 32,
                     left: 16,
@@ -68,8 +68,7 @@ class CallScreen extends StatelessWidget {
                 ],
               );
             }
-
-            // الحالة الأولية أو أي حالة أخرى
+            // الحالة الأولية أو غير معروفة
             return const SizedBox.shrink();
           },
         ),
